@@ -12,6 +12,7 @@ X-vue-element-table is a component based on element-ui's secondary encapsulation
 ``` bash
 npm  install x-vue-element-table --save
 ```
+
 ## Usage
 ``` js
 // register the plugin on vue
@@ -22,9 +23,10 @@ Vue.use(ElementUI)
 
 import xVueEleTable from 'x-vue-element-table'
 Vue.use(xVueEleTable)
- 
+```
+### template
+``` js
 // you can use like this in your component
-// template:
  <x-table :tableData="table.data" :tableKey="table.key" :isExpand="isExpand" :isExpandOnly="isExpandOnly" :sortObj="sortObj" :isCheckbox="isCheckbox" :maxHeight="maxHei" ref="p_table">
       <template slot="column">
         <x-table-col :tKey="table.key" v-for="(item, key) in table.key" :item="item" :key="key">
@@ -40,8 +42,10 @@ Vue.use(xVueEleTable)
        //...
       </template>
     </x-table>
+```
 
-// js:
+### js
+``` js
 	export default {
 		data () {
 			return {
@@ -85,21 +89,21 @@ Vue.use(xVueEleTable)
 		          	template: true,
 		          	width: 300
 		          },
-                  // more data ...
-                  ],
+                  	// more data ...
+                  	],
 		          data: [{
 		            date: '2016-05-02',
 		            name: '王小虎',
-	            	province: '上海',
-			        city: '普陀区',
-			        detail: '金沙江路 1518 弄',
+	            	    province: '上海',
+			    city: '普陀区',
+			    detail: '金沙江路 1518 弄',
 		            address: '上海市普陀区金沙江路 1518 弄'
 		          }, {
 		            date: '2016-05-04',
 		            name: '王小虎',
 		            province: '上海',
-			        city: '普陀区',
-			        detail: '金沙江路 1517 弄',
+			    city: '普陀区',
+			    detail: '金沙江路 1517 弄',
 		            address: '上海市普陀区金沙江路 1517 弄'
 		          }]
 		        },
@@ -109,18 +113,18 @@ Vue.use(xVueEleTable)
 		        isCheckbox: true,
 		        maxHei: 350
 			}
-		},
+		    },
 		methods: {
-	      	handleEdit(index, row) {
+	      	   handleEdit(index, row) {
 	      		console.log(index, row);
-                // some do ...
-	      	},
-	      	handleDelete(index, row) {
+                        // some do ...
+	      	   },
+	      	   handleDelete(index, row) {
 	        	console.log(index, row);
-                // some do ...
-	      	}
-    	}
-	}
+                        // some do ...
+	      	   }
+    	        }
+          }
 ```
 ps: about some properties, you can see [element-ui#table](http://element-cn.eleme.io/#/zh-CN/component/table)
 
