@@ -4,7 +4,7 @@
 X-vue-element-table is a component based on element-ui's secondary encapsulation, further encapsulating the table component in element-ui, reducing the amount of code code redundancy, making users more focused on the development of data modules, easier to use etc...
 
 `中文说明`
-x-vue-element-table 是基于 element-ui 的二次封装的组件，进一步封装了 element-ui 中table组件，减少了代码代码冗余量，使用户更加着重于数据模块的开发，更加简洁
+> x-vue-element-table 是基于 element-ui 的二次封装的组件，进一步封装了 element-ui 中table组件，减少了代码代码冗余量，使用户更加着重于数据模块的开发，更加简洁
 
 使用递归组件和slot插槽进一步抽离了 el-table 中的 el-table-column 组件，并集成了el-table 的排序、展开行、多级表头、添加其他组件等功能，在其基础上有所改动
 
